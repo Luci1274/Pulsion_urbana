@@ -1,0 +1,71 @@
+:root{
+    --color_barra_lateral:rgb(255,255,255);
+
+    --color_texto:rgb(000,000,000);
+    --color_texto_menu:rgb(111,111,111);
+
+    --color_menu_hover:rgb(221, 197, 197);
+    --color_menu_hover_texto:rgb(0,0,0);
+
+    --color_linea:rgb(199, 190, 184);
+
+    --color__switch_base:rgb(201,202,206);
+    --color_switch_circulo:rgb(241,241,241);
+
+    --color_scroll:rgb(192,192,192);
+    --color_scroll_hover:rgb(134,134,134);
+
+    --color_icono_menu:rgb(0,0,0);
+    --color_icono_menu_texto:rgb(255,255,255);
+
+    --color_cuerpo:rgb(255,255,255);
+
+    --color_titulo_pagina:rgb(0,0,0);
+    --color_fondo_titulo:rgb(174,153,182);
+
+    --color_fondo_footer:#ffff;
+    --color_texto_footer:black;
+
+    --color_icono_whatsapp:#25D366;
+    --color_numero_whatsapp:#25D366;
+
+    --color_icono_instagram:#6825d3;
+    --color_usuario_instagram:#E4405F;
+
+}
+
+.dark_mode{
+    --color_barra_lateral:rgb(44,45,49);
+
+    --color_texto:rgb(255,255,255);
+    --color_texto_menu:rgb(255, 255, 255);
+
+    --color_menu_hover:rgb(87, 77, 77);
+    --color_menu_hover_texto:rgb(20, 189, 166);
+
+    --color_linea:rgb(71,70,78);
+
+    --color__switch_base:rgb(39,205,64);
+    --color_switch_circulo:rgb(255,255,255);
+
+    --color_scroll:rgb(68,69,74);
+    --color_scroll_hover:rgb(85,85,85);
+
+    --color_icono_menu:rgb(255,255,255);
+    --color_icono_menu_texto:rgb(0,0,0);
+
+    --color_cuerpo:rgb(92, 85, 85);
+
+    --color_titulo_pagina:rgb(255,255,255);
+    --color_fondo_titulo:rgb(144, 47, 182);
+
+    --color_fondo_footer:black;
+    --color_texto_footer:white;
+
+    --color_icono_whatsapp:#00FF85;
+    --color_numero_whatapp:orange;
+
+    --color_icono_instagram:#A020F0;
+    --color_usuario_instagram:pink;
+
+}
