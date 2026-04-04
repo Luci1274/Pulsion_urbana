@@ -18,7 +18,7 @@ if (menu && barraLateral && main) {
             menu.children[1].style.display = "none";
         }
 
-        if (window.innerWidth <= 320) {
+        if (window.innerWidth <= 480) {
             barraLateral.classList.add("mini_barra_lateral");
             main.classList.add("min_main");
 

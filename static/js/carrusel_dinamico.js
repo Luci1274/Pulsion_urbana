@@ -19,7 +19,7 @@ fetch('../static/fotos/carrusel.json')
         slide.className = 'slide';
         slide.innerHTML = `
         <img src="../static/fotos/${foto.url}" alt="${foto.titulo}">
-        <div class="informacion">
+        <div class="detalles">
           <h3>${foto.titulo}</h3>
           <p>${foto.descripcion}</p>
         </div>

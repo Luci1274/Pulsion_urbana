@@ -1,0 +1,145 @@
+/* ==========================================
+   1. ESTRUCTURA BASE Y ESCRITORIO
+   ========================================== */
+main {
+    margin-left: 250px; /* Ancho por defecto de la sidebar */
+    padding: 20px;
+    transition: margin-left 0.5s ease;
+}
+
+footer {
+    margin-left: 250px;
+    padding: 20px;
+    transition: margin-left 0.5s ease;
+}
+
+/* --- Comportamiento Barra Minimizada (Escritorio) --- */
+.barra_lateral.mini_barra_lateral {
+    width: 80px;
+}
+
+main.min_main, 
+footer.min_main { /* El footer también debería ajustarse */
+    margin-left: 80px;
+}
+
+span.oculto {
+    display: none;
+}
+
+/* ==========================================
+   2. CARRUSELES (GRILLA Y DISEÑO)
+   ========================================== */
+.contenedor-carruseles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 por fila en PC */
+    gap: 20px;
+}
+
+.slide {
+    display: flex;
+    flex-direction: row; /* Foto al lado del texto */
+    min-width: 100%;
+}
+
+.slide img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.informacion {
+    width: 50%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* ==========================================
+   3. RESPONSIVO TABLETS (Menos de 1024px)
+   ========================================== */
+@media (max-width: 1024px) {
+    .contenedor-carruseles {
+        grid-template-columns: 1fr; /* Un carrusel debajo del otro */
+    }
+}
+
+/* ==========================================
+   4. RESPONSIVO CELULARES (Menos de 768px)
+   ========================================== */
+@media (max-width: 768px) {
+    /* Barra Lateral Móvil */
+    .barra_lateral {
+        position: fixed;
+        left: -250px; /* Escondida por defecto */
+        top: 0;
+        width: 250px;
+        height: 100vh;
+        z-index: 2000;
+        transition: left 0.3s ease;
+    }
+
+    /* Clase que activa tu JS al tocar el menú */
+    .barra_lateral.max-barra-lateral {
+        left: 0;
+    }
+
+    /* Reset de márgenes en móvil */
+    main, footer {
+        margin-left: 0 !important;
+        padding: 10px;
+    }
+
+    /* Ajuste del Menú Hamburguesa */
+    .menu {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 2100;
+        cursor: pointer;
+        font-size: 2rem;
+        width: 50px;       /* Ajusta al tamaño que quieras el círculo */
+        height: 50px;
+        border-radius: 50%; /* Lo hace circular */
+        
+        /* ESTO ES LA CLAVE DEL CENTRADO */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Alternancia de iconos del menú */
+    .menu ion-icon[name="close-outline"] {
+        display: none;
+    }
+
+    .redes_footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* ==========================================
+   5. RESPONSIVO MÓVIL PEQUEÑO (Menos de 600px)
+   ========================================== */
+@media (max-width: 600px) {
+    header .titulo_pagina {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    /* Los carruseles pasan a formato vertical (Foto arriba, Texto abajo) */
+    .slide {
+        flex-direction: column;
+    }
+
+    .slide img, .informacion {
+        width: 100%;
+    }
+
+    .slide img {
+        height: 200px; /* Altura fija para la imagen en móvil */
+    }
+}

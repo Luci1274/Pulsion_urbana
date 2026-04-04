@@ -107,15 +107,6 @@ main .foto_empredimiento{
   display: none;
 }
 
-/* responsive */
-@media (max-width:520px){
-  .caption{font-size:13px}
-}
 
-@media (max-width: 768px){
-  .contenedor-carruseles{
-    grid-template-columns: 1fr;
-  }
-}
 
 /* FIN CARRUSEL */

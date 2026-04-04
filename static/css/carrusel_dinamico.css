@@ -51,7 +51,7 @@
     backdrop-filter: blur(4px);
 }
 
-.informacion {
+.detalles {
     width: 50%; /* El texto ocupa la otra mitad */
     padding: 20px;
     display: flex;
@@ -60,18 +60,4 @@
     background: #f9f9f9;
 }
 
-/* RESPONSIVE: En móviles se pone uno arriba del otro */
-@media (max-width: 900px) {
-    .contenedor-carruseles {
-        grid-template-columns: 1fr; /* 1 por fila */
-    }
-}
 
-@media (max-width: 600px) {
-    .slide {
-        flex-direction: column; /* Texto abajo de la imagen en pantallas muy chicas */
-    }
-    .slide img, .informacion {
-        width: 100%;
-    }
-}
