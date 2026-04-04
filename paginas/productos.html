@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="../static/css/navegacion.css">
     <!-- estilo de cada pagina -->
     <link rel="stylesheet" href="../static/css/main.css">
-
+    <link rel="stylesheet" href="../static/css/carrusel_dinamico.css">
+    
     <title>Productos</title>
 </head>
 <body>
@@ -88,107 +89,21 @@
     <!-- El contenido específico de cada página va aquí -->
     <main>
         <div class="contenedor-carruseles">
-            <div class="carousel" aria-roledescription="carrusel">
-                <div class="track">
-                    <!-- Reemplaza las src por tus imágenes -->
-                    <div class="slide">
-                        <img src="https://picsum.photos/id/1011/1200/800" alt="Ciudad al atardecer">
-                    </div>
-                    <div class="slide">
-                        <img src="https://picsum.photos/id/1015/1200/800" alt="Montañas">
-                    </div>
-                    <div class="slide">
-                        <img src="https://picsum.photos/id/1016/1200/800" alt="Lago tranquilo">
-                    </div>
-                    <div class="slide">
-                        <img src="https://picsum.photos/id/1020/1200/800" alt="Bosque">
-                    </div>
-                </div>
+            <!-- Carrusel 1-->
+            <div class="carousel-container" data-category="pulsion_urbana_1">
+                <div class="track"></div>
+                <button class="prev">Anterior</button>
+                <button class="next">Siguiente</button>
+            </div>
 
-                <button class="btn prev"  aria-label="Anterior">&lt;</button>
-                <button class="btn next"  aria-label="Siguiente">&gt;</button>
-
-                <div class="dots" role="tablist" aria-label="Indicadores"></div>
-
-                <div class="caption" aria-live="polite"></div>
-            </div> 
-            
-            <div class="carousel" aria-roledescription="carrusel">
-                <div class="track">
-                    <!-- Reemplaza las src por tus imágenes -->
-                    <div class="slide">
-                        <img src="https://picsum.photos/id/1011/1200/800" alt="Ciudad al atardecer">
-                    </div>
-                    <div class="slide">
-                        <img src="https://picsum.photos/id/1015/1200/800" alt="Montañas">
-                    </div>
-                    <div class="slide">
-                        <img src="https://picsum.photos/id/1016/1200/800" alt="Lago tranquilo">
-                    </div>
-                    <div class="slide">
-                        <img src="https://picsum.photos/id/1020/1200/800" alt="Bosque">
-                    </div>
-                </div>
-
-                <button class="btn prev"  aria-label="Anterior">&lt;</button>
-                <button class="btn next"  aria-label="Siguiente">&gt;</button>
-
-                <div class="dots" role="tablist" aria-label="Indicadores"></div>
-
-                <div class="caption" aria-live="polite"></div>
-            </div> 
-            
-            <div class="carousel" aria-roledescription="carrusel">
-                <div class="track">
-                    <!-- Reemplaza las src por tus imágenes -->
-                    <div class="slide">
-                        <img src="https://picsum.photos/id/1011/1200/800" alt="Ciudad al atardecer">
-                    </div>
-                    <div class="slide">
-                        <img src="https://picsum.photos/id/1015/1200/800" alt="Montañas">
-                    </div>
-                    <div class="slide">
-                        <img src="https://picsum.photos/id/1016/1200/800" alt="Lago tranquilo">
-                    </div>
-                    <div class="slide">
-                        <img src="https://picsum.photos/id/1020/1200/800" alt="Bosque">
-                    </div>
-                </div>
-
-                <button class="btn prev"  aria-label="Anterior">&lt;</button>
-                <button class="btn next"  aria-label="Siguiente">&gt;</button>
-
-                <div class="dots" role="tablist" aria-label="Indicadores"></div>
-
-                <div class="caption" aria-live="polite"></div>
-            </div> 
-            
-            <div class="carousel" aria-roledescription="carrusel">
-                <div class="track">
-                    <!-- Reemplaza las src por tus imágenes -->
-                    <div class="slide">
-                        <img src="https://picsum.photos/id/1011/1200/800" alt="Ciudad al atardecer">
-                    </div>
-                    <div class="slide">
-                        <img src="https://picsum.photos/id/1015/1200/800" alt="Montañas">
-                    </div>
-                    <div class="slide">
-                        <img src="https://picsum.photos/id/1016/1200/800" alt="Lago tranquilo">
-                    </div>
-                    <div class="slide">
-                        <img src="https://picsum.photos/id/1020/1200/800" alt="Bosque">
-                    </div>
-                </div>
-
-                <button class="btn prev"  aria-label="Anterior">&lt;</button>
-                <button class="btn next"  aria-label="Siguiente">&gt;</button>
-
-                <div class="dots" role="tablist" aria-label="Indicadores"></div>
-
-                <div class="caption" aria-live="polite"></div>
-            </div> 
-        
+            <!-- Carrusel 2 -->
+            <div class="carousel-container" data-category="pulsion_urbana">
+                <div class="track"></div>
+                <button class="prev">Anterior</button>
+                <button class="next">Siguiente</button>
+            </div>
         </div>
+
     </main>
 
 
@@ -228,6 +143,7 @@
     <script src="../static/js/darkmode.js"></script>
     <!-- Los scripts específicos de cada página van aquí -->
     <script src="../static/js/carrusel.js"></script>
+    <script src="../static/js/carrusel_dinamico.js"></script>
 
 </body>
 </html>
