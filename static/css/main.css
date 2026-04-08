@@ -17,8 +17,19 @@ main .foto_empredimiento{
     }
 }
 
+main p{
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--color_texto);
+}
+
 .titulos {
-    color: blue;
+    height: 50px;
+    width: 150px;
     display: flex;
-    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    background-color: var(--color_fondo_titulos);
+    color: var(--color_titulos);
 }

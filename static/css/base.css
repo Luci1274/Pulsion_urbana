@@ -20,17 +20,11 @@ header .titulo_pagina{
     margin-left: 0px;
 }
 
-/* responsive */
-@media (max-width:520px){
-  :root{--w:360px; --h:240px}
-}
-
 /* INICIO FOOTER*/
 footer {
     background: var(--color_fondo_footer);
     color: var(--color_texto_footer);
     padding: 20px;
-    
     text-align: center;
 }
 

@@ -7,6 +7,7 @@ main {
     transition: margin-left 0.5s ease;
 }
 
+
 footer {
     margin-left: 250px;
     padding: 20px;
@@ -32,7 +33,7 @@ span.oculto {
    ========================================== */
 .contenedor-carruseles {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 por fila en PC */
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 20px;
 }
 
@@ -44,6 +45,7 @@ span.oculto {
 
 .slide img {
     width: 50%;
+    height: 250px;
     object-fit: cover;
 }
 
@@ -53,6 +55,8 @@ span.oculto {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 /* ==========================================

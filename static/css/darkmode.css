@@ -32,6 +32,9 @@
     --color_icono_instagram:#6825d3;
     --color_usuario_instagram:#E4405F;
 
+    --color_fondo_titulos:#ffffff;
+    --color_titulos:#000000;
+
 }
 
 .dark_mode{
@@ -67,5 +70,8 @@
 
     --color_icono_instagram:#A020F0;
     --color_usuario_instagram:pink;
+
+    --color_fondo_titulos:#000000;
+    --color_titulos:#ffffff;
 
 }
