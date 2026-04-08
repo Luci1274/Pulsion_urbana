@@ -1,0 +1,63 @@
+/* Grilla principal */
+.contenedor-carruseles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 por fila */
+    gap: 20px;
+}
+
+/* El contenedor del carrusel */
+.carousel-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #fff; /* Fondo para que se vea el texto */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.track {
+    display: flex;
+    transition: transform 400ms ease;
+}
+
+/* CADA SLIDE SE DIVIDE EN DOS */
+.slide {
+    min-width: 100%;
+    display: flex; /* Alinea imagen e info lado a lado */
+    flex-direction: row; 
+    align-items: stretch;
+}
+
+.slide img {
+    width: 50%; /* La imagen ocupa la mitad */
+    height: 250px; /* Ajustá la altura según necesites */
+    object-fit: cover;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.45);
+    border: none;
+    color: #fff;
+    width: 44px;
+    height: 44px;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    backdrop-filter: blur(4px);
+}
+
+.detalles {
+    width: 50%; /* El texto ocupa la otra mitad */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #f9f9f9;
+}
+
+
