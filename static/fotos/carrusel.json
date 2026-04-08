@@ -1,27 +1,27 @@
 [
     {
-        "url": "foto_pulsion_urbana_prueba.jpg",
-        "categoria": "pulsion_urbana",
-        "titulo": "Pulsion urbana ",
+        "url": "images.jpeg",
+        "categoria": "Sublimados",
+        "titulo": "Conjunto de remeras sublimadas ",
+        "descripcion": "Remeras sublimadas"
+    },
+    {
+        "url": "remera_sublimada.jpeg",
+        "categoria": "Sublimados",
+        "titulo": "Remera blanca sublimada ",
         "descripcion": "foto de prueba"
     },
     {
-        "url": "foto_pulsion_urbana_prueba2.jpg",
-        "categoria": "pulsion_urbana_1",
-        "titulo": "foto_2",
-        "descripcion": "foto de prueba 2"
-    },
-    {
-        "url": "scanner_8469162.png",
-        "categoria": "pulsion_urbana",
-        "titulo": "foto_2",
-        "descripcion": "foto de prueba 2"
-    },
-    {
-        "url": "foto_pulsion_urbana_prueba.jpg",
-        "categoria": "pulsion_urbana_1",
-        "titulo": "Pulsion urbana ",
+        "url": "Remera-sublimar-adulto-modal-.jpg",
+        "categoria": "Sublimados",
+        "titulo": "Remera blanca sublimada ",
         "descripcion": "foto de prueba"
+    },
+    {
+        "url": "remera-personalizada-mcdonalds-lollapalooza-2025-frente-dtf.jpg.jpg",
+        "categoria": "DTF",
+        "titulo": "DTF",
+        "descripcion": "Remera negra con diseño perosnalizado"
     }
 ]
 
