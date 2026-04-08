@@ -1,20 +1,24 @@
 main{
     margin-left: 250px;
     padding: 20px;
-    transition: margin-left 0.5s ease;
-}
-main .foto_empredimiento{
-    width: 50%;
-    height: 100%;
+    transition: width 0.5s ease, background-color 0.5s ease, left 0.5s ease;
 }
 
-@media (max-width:600px){
-    main{
-       margin-left: 0; 
-    }
-    main.min_main{
-        margin-left: 0;
-    }
+main .contenedor-presentacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+main .contenedor-presentacion img{
+    width: 25%;
+    height: 25%;
+}
+
+main .contenedor-presentacion p {
+    font-size: 24px;
+    color: var(--color_texto);
 }
 
 main p{
@@ -23,13 +27,14 @@ main p{
     color: var(--color_texto);
 }
 
-.titulos {
+main .titulos {
     height: 50px;
-    width: 150px;
+    width: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 20px auto;
     background-color: var(--color_fondo_titulos);
     color: var(--color_titulos);
+    transition: width 0.5s ease, background-color 0.5s ease, left 0.5s ease;
 }

@@ -1,4 +1,3 @@
-
 *{
     margin: 0;
     padding: 0;
@@ -9,23 +8,54 @@ body{
     height: 100vh;
     width: 100%;
     background-color: var(--color_cuerpo);
+    transition: width 0.5s ease, background-color 0.5s ease, left 0.5s ease;
 }
 
-header .titulo_pagina{
-    color: var(--color_titulo_pagina);
-    background-color: var(--color_fondo_titulo);
+header{
+    height: 100px;
     width: 100%;
-    height: 50%;
-    text-align: center;
-    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: var(--color_barra_lateral);
+    transition: width 0.5s ease, background-color 0.5s ease, left 0.5s ease;
+}
+
+header h1{
+    color: var(--color_titulo_pagina);
+    font-size: 24px;
+    font-weight: bold;
+    transition: width 0.5s ease, background-color 0.5s ease, left 0.5s ease;
 }
 
 /* INICIO FOOTER*/
 footer {
-    background: var(--color_fondo_footer);
+    width: 100%;
+    background: var(--color_barra_lateral);
     color: var(--color_texto_footer);
-    padding: 20px;
+    padding: 20px auto;
     text-align: center;
+    transition: width 0.5s ease, background-color 0.5s ease, left 0.5s ease;
+}
+
+footer hr {
+    border: 1;
+    height: 1px;
+    background: var(--color_linea_footer);
+    margin: auto;
+    transition: width 0.5s ease, background-color 0.5s ease, left 0.5s ease;
+}
+
+footer .titulos {
+    height: 50px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    color: var(--color_titulos);
+    transition: width 0.5s ease, background-color 0.5s ease, left 0.5s ease;
 }
 
 footer .whatsapp_logo {

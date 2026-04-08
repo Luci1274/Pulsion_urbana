@@ -1,13 +1,14 @@
 /* CARRUSEL*/
 
 .contenedor-carruseles{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 👈 ESTO hace 2 por fila */
+  display: flex;
+  align-content: center;
+  justify-content: center;
   gap: 20px;
 }
 
 .carousel{
-  width: 100%; /* 🔥 ocupa toda la celda */
+  width: 60%; /* 🔥 ocupa toda la celda */
   aspect-ratio: 16 / 9; /* podés ajustar esto */
   position:relative;
   overflow:hidden;

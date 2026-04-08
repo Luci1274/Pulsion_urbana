@@ -1,15 +1,182 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="es">
 
-{% block css %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/darkmode.css">
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="../static/css/navegacion.css">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="stylesheet" href="../static/css/responsivo.css">
+    <!-- estilo de cada pagina -->
+    <link rel="stylesheet" href="../static/css/carrusel.css">
 
-{% endblock %}
 
-{% block title %}Pulsion Urbana Inicio{% endblock %}
+    <title>Principal</title>
+</head>
 
-{% block content %}
+<body>
+    <!-- icono de apertura y cierre de la barra lateral -->
+    <div class="menu">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close-outline"></ion-icon>
+    </div>
 
-{% endblock %}
+    <!-- codigo barra lateral -->
+    <div class="barra_lateral">
+        <div>
+            <div class="nombre_pagina">
+                <ion-icon id="flecha_cerrar" name="arrow-back-outline"></ion-icon>
+                <span>Pulsion Urbana</span>
+            </div>
+        </div>
 
-{% block js %}
-<script src=""></script>
-{% endblock %}
+        <nav class="navegacion">
+            <ul>
+                <li>
+                    <a href="principal.html">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <span>Inicio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="vestidos.html">
+                        <ion-icon name="heart-half-outline"></ion-icon>
+                        <span>Vestidos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="estampados.html">
+                        <ion-icon name="shirt-outline"></ion-icon>
+                        <span>estampados</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contacto">
+                        <ion-icon name="id-card-outline"></ion-icon>
+                        <span>Contacto</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://maps.app.goo.gl/5e44qzkaPy6hRoQn8">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <span>Encuentranos</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div>
+            <div class="linea"></div>
+            <div class="modo_oscuro">
+                <div class="info">
+                    <ion-icon class="luna" name="moon-outline"></ion-icon>
+                    <span>modo oscuro</span>
+                </div>
+                <div class="switch">
+                    <div class="base">
+                        <div class="circulo">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="titulo"></div>
+        <h1>Pulsion Urbana</h1>
+        </div>
+    </header>
+
+    <!-- El contenido específico de cada página va aquí -->
+    <main>
+        <hr>
+        <div class="contenedor-presentacion">
+            <div>
+                <img src="../static/fotos/foto_pulsion_urbana_prueba.jpg" alt="">
+            </div>
+            <div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio cum vel incidunt itaque est non
+                    consequatur excepturi laudantium! Suscipit architecto nisi ea deleniti, et mollitia praesentium
+                    sapiente! Quae, laborum amet?
+                </p>
+            </div>
+
+        </div>
+        <hr>
+        <div class="titulos">
+            <h2>Destacados</h2>
+        </div>
+        <div class="contenedor-carruseles">
+            <div class="carousel" aria-roledescription="carrusel">
+                <div class="track">
+                    <!-- Reemplaza las src por tus imágenes -->
+                    <div class="slide">
+                        <img src="https://picsum.photos/id/1011/1200/800" alt="Ciudad al atardecer">
+                    </div>
+                    <div class="slide">
+                        <img src="https://picsum.photos/id/1015/1200/800" alt="Montañas">
+                    </div>
+                    <div class="slide">
+                        <img src="https://picsum.photos/id/1016/1200/800" alt="Lago tranquilo">
+                    </div>
+                    <div class="slide">
+                        <img src="https://picsum.photos/id/1020/1200/800" alt="Bosque">
+                    </div>
+                </div>
+
+                <button class="btn prev" aria-label="Anterior">&lt;</button>
+                <button class="btn next" aria-label="Siguiente">&gt;</button>
+
+                <div class="dots" role="tablist" aria-label="Indicadores"></div>
+
+                <div class="caption" aria-live="polite"></div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- footer -->
+    <footer>
+        <hr>
+        <div class="titulos">
+            <h2 id="contacto">
+                Contactanos
+            </h2>
+        </div>
+        <div class="redes_footer">
+            <div class="whatsapp">
+                <ion-icon class="whatsapp_logo" name="logo-whatsapp"></ion-icon>
+                <p class="whatsapp_nombre">WhatsApp</p>
+                <p class="numero">
+                    <a href="https://wa.me/5493416221124?text=Hola%20me%20gustaria%20saber%20m%C3%A1s%20sobre%20un%20producto"
+                        target="_blank" rel="noopener noreferrer" style="color: #25D366; text-decoration: none;">
+                        5493416221124
+                    </a>
+                </p>
+            </div>
+            <div class="instagram">
+                <ion-icon class="instagram_logo" name="logo-instagram"></ion-icon>
+                <p class="instagram_nombre"></p>
+                <p class="nombre_usuario">
+                    <a href="https://www.instagram.com/pulsion_urbana_tamipacheco/" target="_blank"
+                        rel="noopener noreferrer" style="color: #E4405F; text-decoration: none;">
+                        pulsion_urbana_tamipacheco
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../static/js/navegacion.js"></script>
+    <script src="../static/js/darkmode.js"></script>
+    <!-- Los scripts específicos de cada página van aquí -->
+    <script src="../static/js/carrusel.js"></script>
+
+</body>
+
+</html>

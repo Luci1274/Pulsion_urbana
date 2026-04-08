@@ -51,6 +51,9 @@
     backdrop-filter: blur(4px);
 }
 
+.prev{left:12px}
+.next{right:12px}
+
 .detalles {
     width: 50%; /* El texto ocupa la otra mitad */
     padding: 20px;
