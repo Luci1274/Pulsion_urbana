@@ -12,8 +12,9 @@ main .contenedor-presentacion {
     margin-bottom: 40px;
 }
 main .contenedor-presentacion img{
-    width: 25%;
-    height: 25%;
+    width: 40%;
+    max-width: 420px;
+    height: auto;
 }
 
 main .contenedor-presentacion p {
@@ -37,4 +38,16 @@ main .titulos {
     background-color: var(--color_fondo_titulos);
     color: var(--color_titulos);
     transition: width 0.5s ease, background-color 0.5s ease, left 0.5s ease;
+}
+
+/* Aviso de prototipo */
+.prototipo-aviso{
+    max-width: 960px;
+    margin: 12px auto;
+    padding: 10px 14px;
+    border-radius: 8px;
+    background: var(--color_menu_hover);
+    color: var(--color_menu_hover_texto);
+    text-align: center;
+    font-size: 14px;
 }
