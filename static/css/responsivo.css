@@ -31,7 +31,7 @@ span.oculto {
    ========================================== */
 .contenedor-carruseles {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* permitir tamaños más pequeños */
     gap: 20px;
 }
 
@@ -42,8 +42,8 @@ span.oculto {
 }
 
 .slide img {
-    width: 50%;
-    height: 250px;
+    width: 60%;
+    height: 300px;
     object-fit: cover;
 }
 
@@ -63,6 +63,7 @@ span.oculto {
 @media (max-width: 1024px) {
     .contenedor-carruseles {
         grid-template-columns: 1fr; /* Un carrusel debajo del otro */
+        padding: 0 10px;
     }
 }
 
@@ -140,8 +141,7 @@ span.oculto {
     .slide img, .informacion {
         width: 100%;
     }
-
     .slide img {
-        height: 200px; /* Altura fija para la imagen en móvil */
+        height: 240px; /* Altura fija para la imagen en móvil, más alta para mejor visibilidad */
     }
 }

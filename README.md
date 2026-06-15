@@ -1,26 +1,23 @@
-# Pulsion_urbana V1
-👗 Pulsion Urbana - E-Commerce de Moda y Sublimados ¡Bienvenido al repositorio oficial de Pulsion Urbana! Esta es una plataforma web moderna, rápida y responsiva diseñada para exhibir y gestionar nuestro catálogo de vestidos, prendas sublimadas y productos personalizados.
+# 👕 Prototipo V1 - Pulsión Urbana (Fase Inicial / MVP)
 
-El sitio está construido con tecnologías web nativas y enfocado en una experiencia de usuario fluida, cargando todo el catálogo de productos de forma dinámica.
+Este repositorio contiene la **Versión 1 (Mínimo Viable Técnico)** del catálogo web para el microemprendimiento **Pulsión Urbana**. Fue el punto de partida del proyecto, desarrollado con el fin de validar la lógica de navegación y la implementación de las primeras funciones interactivas con JavaScript nativo.
 
-🚀 Características Clave Catálogo Dinámico: Toda la información de los productos (vestidos, diseños de sublimación, tallas, precios e imágenes) se gestiona desde un archivo centralizado JSON, facilitando la actualización del stock sin tocar el código HTML.
+> 📝 **Nota de desarrollo:** Este repositorio representa la Fase 1 del proyecto. El objetivo principal fue establecer la estructura base y los flujos de control del usuario antes de proceder a la refactorización estética y de experiencia de usuario (UX) aplicada en la Versión 2.
 
-Diseño Responsivo (Mobile-First): Completamente optimizado para que los clientes puedan comprar cómodamente desde sus teléfonos móviles, tablets o computadoras.
+---
 
-Filtros Inteligentes: Navegación intuitiva por categorías (Vestidos, Sublimados, Accesorios, etc.).
+## 🛠️ Tecnologías Utilizadas
 
-Interactividad: Galería de imágenes dinámica, efectos visuales modernos con CSS y carrito de compras funcional (o botón de pedido directo a WhatsApp).
+* **HTML5:** Estructuración de la página única dividida por secciones funcionales.
+* **CSS3:** Estilos iniciales en tonos claros y layout estructurado mediante columnas para la barra de navegación.
+* **JavaScript (Vanilla JS):** Manejo de estados de la interfaz y eventos del usuario.
 
-🛠️ Tecnologías Utilizadas Para mantener el proyecto ligero, rápido y fácil de mantener, escalamos la arquitectura utilizando:
+---
 
-HTML5: Estructura semántica para un mejor SEO y accesibilidad.
+## 🚀 Características Técnicas Evaluadas en esta Fase
 
-CSS3: Estilos personalizados, Flexbox y Grid Layout para un diseño limpio, complementado con animaciones sutiles.
+A pesar de ser una versión inicial, este prototipo sirvió para implementar y resolver los siguientes desafíos técnicos:
 
-JavaScript (Vanilla JS): Lógica del lado del cliente encargada de:
-
-Consumir el archivo JSON mediante fetch().
-
-Inyectar los productos dinámicamente en el DOM.
-
-Manejar la lógica de filtros y el carrito.
+* **Barra de Navegación Lateral (Sidebar Layout):** Diseño de un menú fijo a la izquierda con iconografía para simular el ruteo interno de la aplicación (`Inicio`, `Vestidos`, `Estampados`, `Contacto`, `Encuéntranos`).
+* **Implementación de Modo Oscuro (Dark/Light Mode Toggle):** Inclusión de un switch interactivo controlado por JavaScript que altera las variables de color globales de CSS para permitir la transición de interfaz fluida según la preferencia del usuario.
+* **Lógica Primaria de Sliders:** Carruseles horizontales independientes por categorías (`Sublimados` y `DTF`) controlados mediante eventos de clic en los botones nativos de *"Anterior"* (`Ant`) y *"Siguiente"* (`Sig`).

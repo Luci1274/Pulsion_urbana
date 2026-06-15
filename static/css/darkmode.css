@@ -1,28 +1,28 @@
 :root{
-    --color_barra_lateral:rgb(255,255,255);
+    --color_barra_lateral:#ffffff;
 
-    --color_texto:rgb(000,000,000);
-    --color_texto_menu:rgb(111,111,111);
+    --color_texto:#000000;
+    --color_texto_menu:#6f6f6f;
 
-    --color_menu_hover:rgb(221, 197, 197);
-    --color_menu_hover_texto:rgb(0,0,0);
+    --color_menu_hover:#eeddde;
+    --color_menu_hover_texto:#000000;
 
-    --color_linea:rgb(199, 190, 184);
+    --color_linea:#c7beb8;
 
-    --color__switch_base:rgb(201,202,206);
-    --color_switch_circulo:rgb(241,241,241);
+    --color__switch_base:#c9cace;
+    --color_switch_circulo:#f1f1f1;
 
-    --color_scroll:rgb(192,192,192);
-    --color_scroll_hover:rgb(134,134,134);
+    --color_scroll:#c0c0c0;
+    --color_scroll_hover:#868686;
 
-    --color_icono_menu:rgb(0,0,0);
-    --color_icono_menu_texto:rgb(255,255,255);
+    --color_icono_menu:#000000;
+    --color_icono_menu_texto:#ffffff;
 
-    --color_cuerpo:rgb(255,255,255);
+    --color_cuerpo:#ffffff;
 
-    --color_titulo_pagina:rgb(0,0,0);
+    --color_titulo_pagina:#000000;
 
-    --color_texto_footer:black;
+    --color_texto_footer:#000000;
 
     --color_icono_whatsapp:#25D366;
     --color_numero_whatsapp:#25D366;
@@ -36,38 +36,39 @@
 }
 
 .dark_mode{
-    --color_barra_lateral:rgb(44,45,49);
+    /* Paleta nocturna revisada: contraste alto y acento suave */
+    --color_barra_lateral:#0f1724;
 
-    --color_texto:rgb(255,255,255);
-    --color_texto_menu:rgb(255, 255, 255);
+    --color_texto:#E6EEF6;
+    --color_texto_menu:#D0EAF0;
 
-    --color_menu_hover:rgb(87, 77, 77);
-    --color_menu_hover_texto:rgb(20, 189, 166);
+    --color_menu_hover:#122334;
+    --color_menu_hover_texto:#66E0C4;
 
-    --color_linea:rgb(71,70,78);
+    --color_linea:#1f2a36;
 
-    --color__switch_base:rgb(39,205,64);
-    --color_switch_circulo:rgb(255,255,255);
+    --color__switch_base:#2a394a;
+    --color_switch_circulo:#ffffff;
 
-    --color_scroll:rgb(68,69,74);
-    --color_scroll_hover:rgb(85,85,85);
+    --color_scroll:#0b1722;
+    --color_scroll_hover:#15303f;
 
-    --color_icono_menu:rgb(255,255,255);
-    --color_icono_menu_texto:rgb(0,0,0);
+    --color_icono_menu:#E6EEF6;
+    --color_icono_menu_texto:#000000;
 
-    --color_cuerpo:rgb(92, 85, 85);
+    --color_cuerpo:#071226;
 
-    --color_titulo_pagina:rgb(255,255,255);
+    --color_titulo_pagina:#E6EEF6;
 
-    --color_texto_footer:white;
+    --color_texto_footer:#AFC7D4;
 
-    --color_icono_whatsapp:#00FF85;
-    --color_numero_whatapp:orange;
+    --color_icono_whatsapp:#25D366;
+    --color_numero_whatsapp:#25D366;
 
-    --color_icono_instagram:#A020F0;
-    --color_usuario_instagram:pink;
+    --color_icono_instagram:#DD69A6;
+    --color_usuario_instagram:#F76C6C;
 
-    --color_fondo_titulos:#000000;
-    --color_titulos:#ffffff;
+    --color_fondo_titulos:#0b1a2a;
+    --color_titulos:#E6EEF6;
 
 }

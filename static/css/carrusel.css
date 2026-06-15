@@ -8,8 +8,8 @@
 }
 
 .carousel{
-  width: 60%; /* 🔥 ocupa toda la celda */
-  aspect-ratio: 16 / 9; /* podés ajustar esto */
+  width: 100%; /* ocupar el 100% del contenedor para pantallas pequeñas */
+  aspect-ratio: 16 / 9; /* ajustar relación */
   position:relative;
   overflow:hidden;
   border-radius:12px;
@@ -39,6 +39,12 @@
   height:100%;
   object-fit:cover;
   display:block;
+  transition: transform 300ms ease;
+}
+
+/* Escala ligera al hacer hover en escritorio */
+.carousel:hover .slide img{
+  transform: scale(1.03);
 }
 
 /* flechas */
