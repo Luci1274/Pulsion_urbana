@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="../static/css/main.css">
     <link rel="stylesheet" href="../static/css/responsivo.css">
     <!-- estilo de cada pagina -->
+    <link rel="stylesheet" href="../static/css/carrusel.css">
 
-    <link rel="stylesheet" href="../static/css/carrusel_dinamico.css">
 
-    <title>Estampados</title>
+    <title>Principal</title>
 </head>
 
 <body>
@@ -35,19 +35,19 @@
         <nav class="navegacion">
             <ul>
                 <li>
-                    <a href="principal.html">
+                    <a href="index.html">
                         <ion-icon name="home-outline"></ion-icon>
                         <span>Inicio</span>
                     </a>
                 </li>
                 <li>
-                    <a href="vestidos.html">
+                    <a href="paginas/vestidos.html">
                         <ion-icon name="heart-half-outline"></ion-icon>
                         <span>Vestidos</span>
                     </a>
                 </li>
                 <li>
-                    <a href="estampados.html">
+                    <a href="paginas/estampados.html">
                         <ion-icon name="shirt-outline"></ion-icon>
                         <span>estampados</span>
                     </a>
@@ -92,64 +92,47 @@
 
     <!-- El contenido específico de cada página va aquí -->
     <main>
-        <div>
-            <p>
-                Los productos a mostrar son de diseños personalizados
-            </p>
-        </div>
-        <br>
         <hr>
-        <div class="titulos">
-            <h3>Sublimados</h3>
-        </div>
-        <div class="contenedor-carruseles">
-            <!-- Carrusel 1-->
-            <div class="carousel-container" data-category="Sublimados">
-                <div class="track"></div>
-                <button class="prev">Ant</button>
-                <button class="next">Sig</button>
+        <div class="contenedor-presentacion">
+            <div>
+                <img src="../static/fotos/foto_pulsion_urbana_prueba.jpg" alt="">
             </div>
-        </div>
-        <br>
-        <hr>
-        <br>
-        <div class="titulos">
-            <h3>DTF</h3>
-        </div>
-        <div class="contenedor-carruseles">
-            <!-- Carrusel 1-->
-            <div class="carousel-container" data-category="DTF">
-                <div class="track"></div>
-                <button class="prev">Ant</button>
-                <button class="next">Sig</button>
+            <div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio cum vel incidunt itaque est non
+                    consequatur excepturi laudantium! Suscipit architecto nisi ea deleniti, et mollitia praesentium
+                    sapiente! Quae, laborum amet?
+                </p>
             </div>
 
-            <!-- Carrusel 2 -->
-            <div class="carousel-container" data-category="pulsion_urbana">
-                <div class="track"></div>
-                <button class="prev">Ant</button>
-                <button class="next">Sig</button>
-            </div>
         </div>
-        <br>
         <hr>
-        <br>
         <div class="titulos">
-            <h3>SETS</h3>
+            <h2>Destacados</h2>
         </div>
         <div class="contenedor-carruseles">
-            <!-- Carrusel 1-->
-            <div class="carousel-container" data-category="pulsion_urbana_1">
-                <div class="track"></div>
-                <button class="prev">Ant</button>
-                <button class="next">Sig</button>
-            </div>
+            <div class="carousel" aria-roledescription="carrusel">
+                <div class="track">
+                    <!-- Reemplaza las src por tus imágenes -->
+                    <div class="slide">
+                        <img src="https://picsum.photos/id/1011/1200/800" alt="Ciudad al atardecer">
+                    </div>
+                    <div class="slide">
+                        <img src="https://picsum.photos/id/1015/1200/800" alt="Montañas">
+                    </div>
+                    <div class="slide">
+                        <img src="https://picsum.photos/id/1016/1200/800" alt="Lago tranquilo">
+                    </div>
+                    <div class="slide">
+                        <img src="https://picsum.photos/id/1020/1200/800" alt="Bosque">
+                    </div>
+                </div>
 
-            <!-- Carrusel 2 -->
-            <div class="carousel-container" data-category="pulsion_urbana">
-                <div class="track"></div>
-                <button class="prev">Ant</button>
-                <button class="next">Sig</button>
+                <button class="btn prev" aria-label="Anterior">&lt;</button>
+                <button class="btn next" aria-label="Siguiente">&gt;</button>
+
+                <div class="dots" role="tablist" aria-label="Indicadores"></div>
+
+                <div class="caption" aria-live="polite"></div>
             </div>
         </div>
     </main>
@@ -192,7 +175,7 @@
     <script src="../static/js/navegacion.js"></script>
     <script src="../static/js/darkmode.js"></script>
     <!-- Los scripts específicos de cada página van aquí -->
-    <script src="../static/js/carrusel_dinamico.js"></script>
+    <script src="../static/js/carrusel.js"></script>
 
 </body>
 
